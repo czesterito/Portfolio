@@ -1,4 +1,219 @@
-.contacts {
-    height: 200px;
-    width: 200px;
+body, html {
+    padding: 0;
+    margin: 0;
 }
+
+.start, #about, #portfolio {
+    position: relative;
+    background-size: cover;
+    height: 850px;
+    width: 100%;
+    margin: 0;
+}
+
+.start {
+    background-image: url("Images/bg.jpg");
+}
+
+.menu{
+    position: fixed;
+    background-color: #3f1a14;
+    height: 69px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 5;
+    color: white;
+}
+
+.button, .button:hover {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    float: left;
+    width: auto;
+    height: 100%;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.button{
+    background-color: #3f1a14;
+    color: white;
+}
+
+
+.button:hover {
+    background-color: white;
+    color: #3f1a14;
+
+}
+
+#hello {
+    position: absolute;
+    bottom: 25%;
+    left: 8%;
+    color: white;
+    font-size: 30px;
+}
+
+/* next section */
+#about {
+    background-color: #bab6b4;
+}
+
+#face {
+    display: inline-block;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin: 250px 150px 50px 400px;
+    z-index: 2;
+}
+
+#back-face {
+    display: inline-block;
+    position: absolute;
+    margin: 150px 100px;
+    z-index: 1;
+    height: 400px;
+    width: 600px;
+}
+
+#about-me {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+}
+
+#about-me-title {
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+#about-me-text {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+/* next section */
+#portfolio {
+    background-color: #e4e0de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#portfolio-title{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #26221f;
+}
+
+#portfolio-images {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.images {
+    height: 500px;
+    width: 700px;
+    padding: 10px;
+}
+
+.open-window{
+    position: absolute;
+    bottom: 10%;
+    left: 41%;
+    color: #282c2f;
+    background-color: #b1b5b8;
+    border-radius: 3px;
+    border: 3px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.window{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.window-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn{
+    color: #282c2f;
+    background-color: #b1b5b8;
+    border-radius: 3px;
+    border: 3px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* next section */
+#contacts{
+    background-color: #e1e4e7;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts-title {
+    font-size: 30px;
+    font-family: "Copperplate Gothic Bold", serif;
+    margin-bottom: 10px;
+}
+
+.contacts-images {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* next section */
+
+#foot {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f1a14;
+    color: white;
+}
+
+#foot-title {
+    font-size: 30px;
+    font-family: Constantia, serif;
+    margin-bottom: 0;
+}
+
